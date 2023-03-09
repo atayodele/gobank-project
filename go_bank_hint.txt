@@ -1,0 +1,27 @@
+GO BANK PROJECT
+- create a directory gobanl
+- create a file Makefile
+- create a main.go file
+	import "fmt"
+	
+	func main() {
+		fmt.Println("Yeah, good way to start Go Bank")
+	}
+	= On, terminal, run this code snippet
+		- make run => if it show go.mod file not found, run this code
+			- go mod init github.com/atayodele/gobank
+			- make run
+- create an api.go file
+- install MUX --> a powerful HTTP router and URl matcher for builfing Go Web servers 
+	- go get -u github.com/gorilla/mux
+	
+
+DOCKER
+- docker run --name tech-school -p 9085:5432 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=micr0s0ft_ -d postgres
+- docker ps -a
+- telnet localhost 5432		// to test docker
+- go get github.com/lib/pq	
+FOR JWT AUTHENTICATION TOKEN
+	- go get -u github.com/golang-jwt/jwt/v5
+	- go get -u github.com/joho/godotenv
+	- go get golang.org/x/crypto/bcrypt
