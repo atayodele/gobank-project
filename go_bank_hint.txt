@@ -17,7 +17,7 @@ GO BANK PROJECT
 	
 
 DOCKER
-- docker run --name tech-school -p 9085:5432 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=micr0s0ft_ -d postgres
+- docker run --name tech-school -p 9085:5432 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=root -d postgres
 - docker ps -a
 - telnet localhost 5432		// to test docker
 - go get github.com/lib/pq	
